@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
-<body>
-
-<h2>lmao</h2>
+  <head>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
   
-  <p>this is</p>
-
-</body>
+  <body>
+    <div class="searchbox">
+      <form>
+        <input type="text" placeholder="Search">
+      </form>
+    </div>
+  </body>
 </html>
