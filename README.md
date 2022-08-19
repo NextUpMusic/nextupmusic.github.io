@@ -3,11 +3,8 @@
 <body>
 
 <h2>lmao</h2>
-
-<script>
-
-
-</script>
+  
+  <p>this is</p>
 
 </body>
 </html>
