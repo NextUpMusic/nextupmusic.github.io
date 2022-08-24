@@ -10,6 +10,10 @@
   font-size: 60px;
 }
 
+.h2{
+  text-align: center;
+}
+
 /* searchbox */
 .searchbox{
   width: 100%;
