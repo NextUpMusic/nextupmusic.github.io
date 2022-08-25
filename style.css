@@ -15,7 +15,7 @@
 }
 
 /* size and shape of searchbox */
-form{
+.form{
   width: 600px;
   height: 55px;
   display: flex;
