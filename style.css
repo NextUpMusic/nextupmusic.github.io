@@ -15,15 +15,20 @@
 }
 
 /* size and shape of container */
-.form{
+.searchbar{
   width: 600px;
   height: 55px;
   display: flex;
 }
 
 /* recenter container */
-.form input{
+.searchbar input{
   flex: 1;
   border: none;
   outline: none;
+}
+
+.dropdown{
+  width: 10px;
+  height:10px;
 }
