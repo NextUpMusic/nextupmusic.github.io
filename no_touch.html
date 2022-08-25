@@ -6,20 +6,24 @@
 <p id="demo">Fetch a file to change this text.</p>
 
 <script>
-async function getText(url){
-fetch(url)
+fetch('https://catfact.ninja/fact')
   .then(
     function(response) {
+      if (response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' +
+          response.status);
+        return;
+      }
+
+      // Examine the text in the response
       response.json().then(function(data) {
-        let x = data;
+        console.log(data);
       });
     }
   )
-
-  return await x;
-}
-  
-  console.log(getText('https://catfact.ninja/fact'));
+  .catch(function(err) {
+    console.log('Fetch Error :-S', err);
+  });
 </script>
 
 </body>
