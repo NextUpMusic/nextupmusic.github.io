@@ -16,19 +16,41 @@
   <body>
     <h1>NextUp Music Test</h1>
     
-    <div class="searchbox">
-      <form>
-        <input type="text" placeholder="Search">
-      </form>
-    </div>
+    <!-- dropdown script -->
+    <script>
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
     
-    <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn"><img src="https://cdn-icons-png.flaticon.com/512/446/446147.png"></button>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="#">Artists</a>
-        <a href="#">Songs</a>
-        <a href="#">Genres</a>
-        <a href="#">Albums</a>
+    <div class="container">
+      <div class="searchbar">
+        <form>
+          <input type="text" placeholder="Search">
+        </form>
+      </div>
+    
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"><img src="https://cdn-icons-png.flaticon.com/512/446/446147.png"></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">Artists</a>
+          <a href="#">Songs</a>
+          <a href="#">Genres</a>
+          <a href="#">Albums</a>
+        </div>
       </div>
     </div>
   </body>
