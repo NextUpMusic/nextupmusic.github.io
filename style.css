@@ -13,3 +13,10 @@
   align-items: center;
   justify-content: center;
 }
+
+/* size and shape of searchbox */
+form{
+  width: 600px;
+  height: 55px;
+  display: flex;
+}
