@@ -2,7 +2,9 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    
     <link rel="stylesheet" href="style.css">
+    
     <style>
       h1{
         font-size: 60px;
@@ -13,10 +15,21 @@
   
   <body>
     <h1>NextUp Music Test</h1>
+    
     <div class="searchbox">
       <form>
         <input type="text" placeholder="Search">
       </form>
+    </div>
+    
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn"><img src="https://cdn-icons-png.flaticon.com/512/446/446147.png"></button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#">Artists</a>
+        <a href="#">Songs</a>
+        <a href="#">Genres</a>
+        <a href="#">Albums</a>
+      </div>
     </div>
   </body>
 </html>
