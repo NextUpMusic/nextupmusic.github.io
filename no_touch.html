@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  </head>
+
+  <body>
+    <h1>API request test</h1>
+    <p id="par"></p>
+    <script>
+      var client_id = "e7612da4dc4442758c74601d0349d254";
+      var client_secret = "b9e58a18037641f2b620c7b9683e3da3";
+      var base_url = "https://api.spotify.com/v1";
+
+      const request1 = new XMLHttpRequest();
+      request1.open("GET", "https://catfact.ninja/fact");  
+      request1.send();
+      document.getElementById("par").innerHTML = request1.responseText;
+      
+    </script>
+  </body>
+</html>
