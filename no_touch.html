@@ -7,17 +7,20 @@
   <body>
     <h1>API request test update</h1>
     <p id="status">status here</p>
-    <p id="response">response here</p>
+    <p id="response1">response here</p>
     <script>
       var client_id = "e7612da4dc4442758c74601d0349d254";
       var client_secret = "b9e58a18037641f2b620c7b9683e3da3";
       var base_url = "https://api.spotify.com/v1";
 
-      let response = await fetch('https://catfact.ninja/docs/api-docs.json');
-
-      document.getElementById('status').innerHTML = response.status;
-
+      async function getCatFact()
+      {
+        let response = await fetch('https://catfact.ninja/docs/api-docs.json');
+        let mytext = await response.text();
+        document.getElementById('response1').innerHTML = mytext;
+      }
       
+      getCatFact();
     </script>
   </body>
 </html>
