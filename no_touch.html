@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    
-  </head>
+<body>
+<h1>JavaScript Fetch API</h1>
+<h2>The fetch() Method</h2>
+<p id="demo">Fetch a file to change this text.</p>
 
-  <body>
-    <h1>API request test update</h1>
-    <p id="status">status here</p>
-    <p id="response1">response here omg</p>
-    <script>
-      var client_id = "e7612da4dc4442758c74601d0349d254";
-      var client_secret = "b9e58a18037641f2b620c7b9683e3da3";
-      var base_url = "https://api.spotify.com/v1";
+<script>
+getText("https://www.w3schools.com/jsref/fetch_info.txt");
 
-      async function getCatFact()
-      {
-        let response = await fetch('https://catfact.ninja/docs/api-docs.json');
-        let mytext = await response.text();
-        document.getElementById('response1').innerHTML = mytext;
-      }
-      
-      getCatFact();
-    </script>
-  </body>
+async function getText(file) {
+  let myObject = await fetch(file);
+  let myText = await myObject.text();
+  document.getElementById("demo").innerHTML = myText;
+}
+</script>
+
+</body>
 </html>
