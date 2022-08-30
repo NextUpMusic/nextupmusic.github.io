@@ -13,6 +13,11 @@
   justify-content: center;
 }
 
+.search{
+  width: 300%;
+  height: 175%;
+}
+
 #grad1 {
   height: 200px;
   background-color: #0eeee0; /* For browsers that do not support gradients */
