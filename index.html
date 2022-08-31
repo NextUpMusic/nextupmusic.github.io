@@ -10,21 +10,31 @@
         font-size: 300%;
         text-align: center;
       }
-      #grad1 {
+      
+      #grad1{
         height: 200px;
         background-color: #0eeee0; /* For browsers that do not support gradients */
         background-image: linear-gradient(#0eeee0, #262626);
       }
+      
+      searchbar{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      searchbar input{
+        width: 1575px;
+        height: 758px;
+      }
+      
     </style>
   </head>
   
   <body>
     <h1>NextUp Music Test</h1>
-    
-    <script>
-      document.body.style.background = 'linear-gradient(to bottom, #0eeee0 1%, #0dd1c5 1%, #262626)';
-      document.body.style.height = 100;
-    </script>
     
     <div class="searchbar">
       <form>
