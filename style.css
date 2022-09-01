@@ -5,8 +5,13 @@
   box-sizing: border-box;
 }
 
-#background-image{
+#grad1 {
   height: 200px;
   background-color: #0eeee0; /* For browsers that do not support gradients */
   background-image: linear-gradient(#0eeee0, #262626);
+  <div id="grad1"></div>
+
+</body>
+</html>
+
 }
