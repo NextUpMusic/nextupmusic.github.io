@@ -19,11 +19,21 @@ form{
   display: flex;
 }
 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
 #grad1 {
-  height: 200px;
+  height: 999px;
   background-color: #0eeee0; /* For browsers that do not support gradients */
   background-image: linear-gradient(#0eeee0, #262626);
-  <div id="grad1"></div>
+}
+</style>
+</head>
+<body>
+
+
+<div id="grad1"></div>
 
 </body>
 </html>
