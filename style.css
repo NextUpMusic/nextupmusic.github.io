@@ -13,6 +13,12 @@
   justify-content: center;
 }
 
+form{
+  width: 600px;
+  height: 55px;
+  display: flex;
+}
+
 #grad1 {
   height: 200px;
   background-color: #0eeee0; /* For browsers that do not support gradients */
