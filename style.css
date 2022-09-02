@@ -1,35 +1,34 @@
 *{
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet', sans-serif;
-  box-sizing: border-box;
-}
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .searchbar{
+    width: 100%;
+    height: 100vh;
+    padding: 5%;
+    background-image: linear-gradient(#0eeee0, #262626);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  form{
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+  }
 
-.searchbar{
-  width: 100%;
-  height: 100vh;
-  padding: 5%;
-  background-image: linear-gradient(#0eeee0, #262626);
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backdrop: blur(4px) saturate(180%);
-}
-
-form{
-  width: 100%;
-  max-width: 700px;
-  background: rgba(255, 255, 255, 0.2);
-  display: flex;
-  align-items: center;
-  border-radius: 60px;
-  padding: 10px 20px;
-  backdrop-filter: blur(4px) saturate(180%);
-}
-
-form input{
+  form input{
     background: transparent;
     flex: 1;
     border: 0;
@@ -38,10 +37,10 @@ form input{
     font-size: 20px;
   }
 
-::placeholder{
-  color: #ffffff;
-}
+  ::placeholder{
+    color: #ffffff;
+  }
   
-input, select, textarea{
-  color: #ffffff;
-}
+  input, select, textarea{
+    color: #ffffff;
+  }
