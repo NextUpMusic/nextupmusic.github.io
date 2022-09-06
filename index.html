@@ -4,18 +4,31 @@
     <meta name="viewport" content="width=device-width">
     
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
     
     <title>NextUp Music</title>
 
     <style>
+      h1{
+        color:#ffffff;
+        text-align: center;
+        font-size: 50pt;
+      }
     </style>
     
   </head>
   
   <body>
-    <div class="searchbar">
+      <h1>NextUp Music</h1>
+
+    <div class="container">
       <form>
         <input type="search" placeholder="Search">
       </form>
+
+      <ntp-realbox-dropdown id="matches" role="listbox" hidden>
+        #shadow-root (open)
+      </ntp-realbox-dropdown>
+    </div>
   </body>
 </html>
