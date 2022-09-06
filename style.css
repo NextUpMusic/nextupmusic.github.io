@@ -1,17 +1,20 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Trebuchet', sans-serif;
+    font-family: 'Archivo Black', sans-serif;
     box-sizing: border-box;
   }
-  
-  .searchbar{
-    width: 100%;
-    height: 100vh;
-    padding: 5%;
+
+  body{
     background-image: linear-gradient(#0eeee0, #262626);
     background-position: center;
     background-size: cover;
+  }
+
+  .container{
+    width: 100%;
+    height: 100vh;
+    padding: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,4 +46,17 @@
   
   input, select, textarea{
     color: #ffffff;
+  }
+
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {display: none;}
+
+  ntp-realbox-dropdown{
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
   }
