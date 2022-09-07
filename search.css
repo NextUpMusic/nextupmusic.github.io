@@ -22,13 +22,13 @@
   
   form{
     width: 100%;
-    max-width: 700px;
+    max-width: 65%;
     background: rgba(255, 255, 255, 0.2);
     display: flex;
     align-items: center;
     border-radius: 60px;
-    padding: 10px 20px;
-    backdrop-filter: blur(4px) saturate(180%);
+    padding: 1% 2%;
+    backdrop-filter: blur(100%) saturate(180%);
   }
 
   form input{
@@ -36,8 +36,8 @@
     flex: 1;
     border: 0;
     outline: none;
-    padding: 24px 20px;
-    font-size: 20px;
+    padding: 3% 2%;
+    font-size: 125%;
   }
 
   ::placeholder{
