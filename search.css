@@ -1,77 +1,77 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Archivo Black', sans-serif;
-    box-sizing: border-box;
-  }
-
-html{
-    background-color: #202020;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Archivo Black', sans-serif;
+  box-sizing: border-box;
 }
 
-  body{
-    background-image: linear-gradient(#292929, #202020);
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
-  }
+html{
+  background-color: #202020;
+  height: 100%;
+}
+
+body{
+  background-image: linear-gradient(#292929, #202020);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
 
 h1{
   color:#ffffff;
   font-size: 400%;
-  padding: 1%;
   position: relative;
-  top: 50px;
   text-align: center;
+  top: 60px;
 }
 
-  .container{
-    width: 100%;
-    height: 100vh;
-    padding: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.container{
+  width: 100%;
+  height: 100vh;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
   
-  form{
-    width: 100%;
-    max-width: 65%;
-    background: rgba(255, 255, 255, 0.2);
-    display: flex;
-    align-items: center;
-    border-radius: 60px;
-    padding: 1% 2%;
-    backdrop-filter: blur(100%) saturate(180%);
-  }
+form{
+  width: 100%;
+  max-width: 60%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 1% 2%;
+  backdrop-filter: blur(100%) saturate(180%);
+  position: absolute;
+}
 
-  form input{
-    background: transparent;
-    flex: 1;
-    border: 0;
-    outline: none;
-    padding: 3% 2%;
-    font-size: 125%;
-  }
+form input{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 3% 2%;
+  font-size: 125%;
+}
 
-  ::placeholder{
-    color: #ffffff;
-  }
+::placeholder{
+  color: #ffffff;
+}
   
-  input, select, textarea{
-    color: #ffffff;
-  }
+input, select, textarea{
+  color: #ffffff;
+}
 
-  input[type="search"]::-webkit-search-decoration,
-  input[type="search"]::-webkit-search-cancel-button,
-  input[type="search"]::-webkit-search-results-button,
-  input[type="search"]::-webkit-search-results-decoration {display: none;}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {display: none;}
 
-  ntp-realbox-dropdown{
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 99;
-  }
+ntp-realbox-dropdown{
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 99;
+}
