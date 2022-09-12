@@ -5,6 +5,11 @@
     box-sizing: border-box;
   }
 
+html{
+    background-color: #202020;
+    height: 100%;
+}
+
   body{
     background-image: linear-gradient(#292929, #202020);
     background-position: center;
