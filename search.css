@@ -1,9 +1,9 @@
-@import "sanfrancisco-font.css";
+@import url('https://rsms.me/inter/inter.css');
 
 *{
   margin: 0;
   padding: 0;
-  font-family: 'SF Display';
+  font-family: 'Inter';
   box-sizing: border-box;
 }
 
