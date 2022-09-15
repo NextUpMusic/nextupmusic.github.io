@@ -14,7 +14,8 @@ html{
 }
 
 body{
-  background-image: linear-gradient(#000000, #000000);
+  background-image: linear-gradient(#262626, #000000);
+  filter: blur(100%);
   background-position: center;
   background-size: cover;
   overflow: hidden;
