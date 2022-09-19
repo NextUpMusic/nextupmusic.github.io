@@ -14,8 +14,7 @@ html{
 }
 
 body{
-  background-image: linear-gradient(#262626, #000000);
-  filter: blur(100%);
+  background-image: linear-gradient(#000000, #000000);
   background-position: center;
   background-size: cover;
   overflow: hidden;
@@ -36,7 +35,7 @@ h1{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  font-size: 500%;
+  font-size: 900%;
   position: relative;
   display: inline-block;
   top: 10%;
@@ -52,13 +51,13 @@ h1{
 }
 
 p{
-  font-size: 200%;
+  font-size: 250%;
   color:#ffffff;
   font-weight: 600;
   text-align: center;
   position: relative;
   display: inline-block;
-  bottom: 50%;
+  bottom: 45%;
 }
 
 
@@ -97,7 +96,7 @@ form input{
 
 ::placeholder{
   color: #ffffff;
-  font-size: 125%;
+  font-size: 300%;
 }
   
 input, select, textarea{
