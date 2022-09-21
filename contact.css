@@ -10,14 +10,24 @@
 body{
     background-position: center;
     background-size: cover;
-    background-color: #303030;
     overflow: hidden;
 }
 
 .content{
-    color: #ffffff;
-    font-size: 125%;
+    height: 50vh;
+    width: 77%;
+    background-color: #303030;
+    background-size: cover;
+    position: relative;
+    float: right;
+    display: flex;
+}
 
+.main{
+    display: inline;
+    color: #ffffff;
+    font-size: 165%;
+    margin;
 }
 
 .body a{
