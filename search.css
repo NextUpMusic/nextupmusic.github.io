@@ -91,16 +91,16 @@ form input{
   flex: 1;
   border: 0;
   outline: none;
-  padding: 3% 2%;
+  padding: 1% 2%;
 }
 
 ::placeholder{
   color: #ffffff;
-  font-size: 300%;
 }
   
 input, select, textarea{
   color: #ffffff;
+  font-size: 300%;
 }
 
 input[type="search"]::-webkit-search-decoration,
