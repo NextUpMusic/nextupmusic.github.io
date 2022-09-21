@@ -16,7 +16,6 @@ html{
 body{
     background-position: center;
     background-size: cover;
-    overflow: hidden;
 }
 
 
@@ -32,36 +31,36 @@ body{
 }
 /* pfp */
 .pfp{
-    height: 25vh;
-    width: 20%;
+    height: 250px;
+    width: 250px;
     background-color: #ffffff;
     border-radius: 50%;
     display: flex;
     position: relative;
     float: left;
-    bottom: 200%;
-    right: 15%;
+    right: 150px;
+    bottom: 100px;
 }
 /* name of artist/song */
 .name{
     color: #ffffff;
-    font-size: 400%;
+    font-size: 80pt;
     position: relative;
     text-align: left;
-    right: 10%;
-    bottom: 150%;
+    right: 100px;
+    bottom: 50px;
 }
 /* tags */
 .tag{
     color: #ffffff;
     border: 2px solid #0eeee0;
     border-radius: 60px;
-    font-size: 175%;
+    font-size: 35pt;
     display: inline;
     padding: 1% 2%;
     position: relative;
     float: right;
-    bottom: 450%;
+    bottom: 275px;
 }
 
 
@@ -89,18 +88,6 @@ body{
     display: flex;
 }
 
-.main{
-    border: 5px solid #0eeee0;
-    display: inline;
-    font-size: 500%;
-    color: #ffffff;
-    position: relative;
-    float: right;
-    padding: 1% 2%;
-    left: 70%;
-    top: 20%;
-}
-
 
 /* sidebar section */
 .sidebar{
@@ -108,18 +95,22 @@ body{
     width: 23%;
     background-color: #000000;
     padding: 2%;
-    font-size: 125%;
 }
 /* logo placeholder */
 .logo{
+    width: 125px;
+    height: 125px;
+    background-color: #0eeee0;
     position: absolute;
+    right: 92.5%;
 }
 /* title */
 .nextup{
     position: relative;
-    top: 1%;
     text-align: right;
     color: #0eeee0;
+    font-size: 50pt;
+    top: 25px;
 }
 /* sidebar content */
 .sidenav{
@@ -131,14 +122,12 @@ body{
     display: block;
     color: #ffffff;
     text-align: left;
-    padding: 3% 3%;
+    padding: 10% 3%;
     text-decoration: none;
-    font-size: 125%;
-    top: 50%;
+    font-size: 30pt;
 }
 
 .sidenav a:hover{
     background-color: #151515;
     border-radius: 60px;
 }
-
