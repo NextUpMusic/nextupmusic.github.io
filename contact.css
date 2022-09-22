@@ -24,10 +24,12 @@ body{
 }
 
 .main{
-    display: inline;
+    display: flex;
+    position: relative;
+    top: 10px;
+    left: 5px;
     color: #ffffff;
     font-size: 165%;
-    margin;
 }
 
 .body a{
