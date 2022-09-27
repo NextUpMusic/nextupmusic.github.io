@@ -9,7 +9,7 @@
 }
 
 html{
-    background-color: #202020;
+    background-color: #010409;
     height: 100%;
 }
 
@@ -67,7 +67,6 @@ body{
 
 /* border between content and profile */
 .border{
-    background-image: linear-gradient(#202020, #252525, #303030);
     height: 1vh;
     width: 77%;
     position: relative;
@@ -82,7 +81,7 @@ body{
 .content{
     height: 50vh;
     width: 77%;
-    background-color: #303030;
+    background-color: #010409;
     background-size: cover;
     position: relative;
     float: right;
@@ -121,7 +120,7 @@ body{
 .sidenav a{
     float: none;
     display: block;
-    color: #ffffff;
+    color: #0d1117;
     text-align: left;
     padding: 10% 3%;
     text-decoration: none;
