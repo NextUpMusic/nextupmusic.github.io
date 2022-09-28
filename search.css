@@ -96,7 +96,7 @@ form input{
 }
 
 ::placeholder{
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.2);;
 }
   
 input, select, textarea{
