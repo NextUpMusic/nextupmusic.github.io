@@ -15,12 +15,10 @@ html{
 
 body{
   background-color: #040d21;
-  filter: blur(100%);
   background-position: center;
   background-size: cover;
   overflow: hidden;
 }
-
 
 /* title */
 .name{
@@ -36,10 +34,9 @@ h1{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  font-size: 900%;
+  font-size: 700%;
   position: relative;
   display: inline-block;
-  top: 10%;
 }
 
 
@@ -52,13 +49,13 @@ h1{
 }
 
 p{
-  font-size: 250%;
+  font-size: 175%;
   color:#ffffff;
   font-weight: 600;
   text-align: center;
   position: relative;
   display: inline-block;
-  bottom: 45%;
+  bottom: 70%;
 }
 
 
@@ -83,7 +80,7 @@ form{
   padding: 1% 2%;
   backdrop-filter: blur(100%) saturate(180%);
   position: absolute;
-  bottom: 45%;
+  bottom: 61%;
 }
 
 /* actual searchbar */
@@ -96,12 +93,12 @@ form input{
 }
 
 ::placeholder{
-  color: rgba(255, 255, 255, 0.2);;
+  color: #ffffff;
 }
   
 input, select, textarea{
   color: #ffffff;
-  font-size: 300%;
+  font-size: 200%;
 }
 
 input[type="search"]::-webkit-search-decoration,
@@ -115,4 +112,17 @@ ntp-realbox-dropdown{
   right: 0;
   top: 0;
   z-index: 99;
+}
+
+.drop{
+  width: 60%;
+  height: 60vh;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-size: cover;
+  display: flex;
+  position: relative;
+  border-radius: 59px;
+  left: 20%;
+  bottom: 172vh;
+  
 }
