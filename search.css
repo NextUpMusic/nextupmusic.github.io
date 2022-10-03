@@ -18,41 +18,24 @@ body{
   background-position: center;
   background-size: cover;
   overflow: hidden;
+  text-align: center;
 }
 
 /* title */
-.name{
-  text-align: center;
-  background-size: cover;
-  width: 100%;
-  height: 50vh;
-  align-items: center;
-}
-
 h1{
   background: -webkit-linear-gradient(45deg, #0eeee0 40%, #0eee15,#eec50e);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-align: center;
   font-size: 700%;
   position: relative;
   display: inline-block;
-}
-
-
-.phrase{
-  text-align: center;
-  background-size: cover;
-  width: 100%;
-  height: 50vh;
-  align-items: center;
 }
 
 p{
   font-size: 175%;
   color:#ffffff;
   font-weight: 600;
-  text-align: center;
   position: relative;
   display: inline-block;
   bottom: 70%;
@@ -80,7 +63,7 @@ form{
   padding: 1% 2%;
   backdrop-filter: blur(100%) saturate(180%);
   position: absolute;
-  bottom: 61%;
+  bottom: 68vh;
 }
 
 /* actual searchbar */
@@ -107,13 +90,14 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {display: none;}
 
 
+/* dropdown for searchbar */
 .drop{
-  width: 67%;
-  height: 59vh;
+  width: 60%;
+  height: 57vh;
   background-color: rgba(255, 255, 255, 0.2);
   background-size: cover;
   display: flex;
-  position: relative;
-  border-radius: 59px;
-  bottom: 92vh;
+  position: absolute;
+  border-radius: 60px;
+  bottom: 21.5vh;
 }
