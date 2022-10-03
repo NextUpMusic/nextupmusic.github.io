@@ -55,7 +55,6 @@ p{
 /* outside of searchbar */
 form{
   width: 100%;
-  max-width: 60%;
   background: rgba(255, 255, 255, 0.2);
   display: flex;
   align-items: center;
@@ -63,7 +62,7 @@ form{
   padding: 1% 2%;
   backdrop-filter: blur(100%) saturate(180%);
   position: absolute;
-  bottom: 68vh;
+  top: 1%;
 }
 
 /* actual searchbar */
