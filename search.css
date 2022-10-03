@@ -63,6 +63,7 @@ form{
   backdrop-filter: blur(100%) saturate(180%);
   position: absolute;
   top: 1%;
+  background: transparent;
 }
 
 /* actual searchbar */
