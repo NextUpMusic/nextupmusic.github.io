@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Inter';
+    font-weight: 700;
     box-sizing: border-box;
 }
 
@@ -16,7 +17,7 @@ body{
 .content{
     height: 50vh;
     width: 77%;
-    background-color: #303030;
+    background-color: #2a3142;
     background-size: cover;
     position: relative;
     float: right;
@@ -45,7 +46,7 @@ body{
 .profile{
     height:50vh;
     width: 77%;
-    background-image: linear-gradient(#303030, #252525, #202020);
+    background-color: #1e2638;
     background-size: cover;
     padding: 10%;
     position: relative;
@@ -58,7 +59,7 @@ body{
 }
 
 .border{
-    background-image: linear-gradient(#202020, #252525, #303030);
+    background-image: linear-gradient(#1e2638, #2a3142);
     height: 5px;
     width: 77%;
     position: relative;
@@ -71,20 +72,25 @@ body{
 .sidebar{
     height: 100vh;
     width: 23%;
-    background-color: #000000;
+    background-color: #040d21;
     padding: 2%;
     font-size: 125%;
 }
 
 .logo{
+    width: 125px;
+    height: 125px;
+    background-color: #0eeee0;
     position: absolute;
+    right: 92.5%;
 }
 
 .nextup{
     position: relative;
-    top: 3px;
     text-align: right;
     color: #0eeee0;
+    font-size: 50pt;
+    top: 25px;
 }
 
 .sidenav{
@@ -96,12 +102,13 @@ body{
     display: block;
     color: #ffffff;
     text-align: left;
-    padding: 2% 3%;
+    padding: 10% 3%;
     text-decoration: none;
-    font-size: 125%;
+    font-size: 30pt;
 }
 
 .sidenav a:hover{
     background-color: #151515;
     border-radius: 60px;
 }
+
