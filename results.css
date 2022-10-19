@@ -87,6 +87,11 @@ body{
     position: relative;
     float: right;
     display: flex;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    background: transparent;
 }
 
 
