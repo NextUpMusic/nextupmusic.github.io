@@ -14,23 +14,18 @@ html{
 }
 
 body{
-    background-position: center;
-    background-size: cover;
     overflow: hidden;
 }
 
-/* profile section */
 #profile{
     height: 10vh;
     width: 77%;
     background-color: #161b22;
-    background-size: cover;
     padding: 175px;
     position: relative;
     float: right;
 }
 
-/* pfp */
 #pfp{
     height: 200px;
     width: 200px;
@@ -41,10 +36,11 @@ body{
     right: 150px;
     bottom: 100px;
 }
+
 /* name of artist/song */
 #name{
     color: #ffffff;
-    font-size: 80pt;
+    font-size: 60pt;
     position: relative;
     text-align: left;
     right: 100px;
@@ -56,7 +52,6 @@ body{
     height: 100vh;
     width: 77%;
     background-color: #010409;
-    position: relative;
     float: right;
     overflow-y: scroll;
 }
@@ -76,8 +71,6 @@ body{
     font-size: 60pt;
     top: 25px;
 }
-/* sidebar content */
-
 
 #sidenav a{
     float: none;
