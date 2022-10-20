@@ -62,7 +62,7 @@ async function getTracks(type, id)
 async function getReccomendations(type, id)
 {
   let token = await getToken(client_id, client_secret);
-  let url = 'https://api.spotify.com/v1/recommendations?seed_' + type + '=' + id;
+  let url = 'https://api.spotify.com/v1/recommendations?seed_' + type + '=' + id + "&max_popularity=30";
   let xhr = new XMLHttpRequest();
   xhr.open('GET', url, false);
   xhr.setRequestHeader('Authorization', 'Bearer ' + token);
