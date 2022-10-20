@@ -28,21 +28,48 @@ async function setPage()
 
     if (type == "tracks")
     {
-        document.getElementById("pfp").style.backgroundImage = catalog.images[0].url;
+        document.getElementById("pfp").style.backgroundImage = catalog.album.images[0].url;
         document.getElementById("pfp").style.backgroundSize = "cover";
     }
 
-    let recs = await getReccomendations(type, id);
-    console.log(recs);
+    if (type == "artists" || type == "tracks")
+    {
+        var recs = await getReccomendations(type, id);
+    }
+
+    else
+    {
+        let request = await getTracks("albums", id);
+        let popularity = [];
+        let tracks = [];
+
+        for (let i = 0; i < request.items.length; i++)
+        {
+            popularity.push(await getCatalog("tracks", request.items[i].id).popularity);
+            tracks.push(await request.items[i]);
+        }
+
+        let sorted = popularity;
+        sorted.sort(function(a, b){return a-b});
+
+        let ids = "";
+
+        for (let i = 0; i < 5; i++)
+        {
+            let index = popularity.indexOf(sorted[i]);
+            ids += tracks[index].id + ",";
+        }
+
+        ids = ids.substring(0, ids.length - 1);
+        var recs = await getReccomendations("tracks", ids);
+    }
+
 
     for (let i = 0; i < 10; i++)
     {
-        if (recs.tracks[i].popularity > 30)
-        {
             let result = await createResult("tracks", recs.tracks[i].id);
             content.appendChild(result);
             content.appendChild(document.createElement("br"));
-        }
     }
 }
 
