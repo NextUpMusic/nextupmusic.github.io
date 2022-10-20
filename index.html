@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width">
-    
     <link rel="stylesheet" href="search.css">
     
-    <title>NextUp</title>
+    <title>Search</title>
   </head>
   
   <body>
@@ -13,104 +11,16 @@
     <br>
     <p>Find similar music from underground artists.</p>
 
-    <div class="container">
-      <div class="drop">
-        <div class="results">
-          <div class="main_artist">
-            <rect x="0" y="0" style="fill: #ffffff;"/>
+    <div id="drop">
+      <form>
+        <input type="search" id="search" placeholder="Search for">
+      </form>
 
-            <div class="icon">
-              <rect x="0" y="0" style="fill: #000000;" />
-            </div>
-          
-            <p class="title">Artist</p>
-          </div>
-          
-
-          <div class="main_album">
-            <rect x="0" y="0" style="fill: #ffffff;"/>
-
-            <div class="icon">
-              <rect x="0" y="0" style="fill: #000000;" />
-            </div>
-
-            <p class="title">Album</p>
-            <br>
-            <p class="artist">Artist</p>
-          </div>
-
-
-          <!-- Songs -->
-          <div class="song">
-            <rect x="0" y="0" style="fill: #ffffff;"/>
-
-            <div class="icon">
-              <rect x="0" y="0" style="fill: #000000;" />
-            </div>
-
-            <p class="title">Song</p>
-            <br>
-            <p class="artist" id="artist">Artist</p>
-            <p class="album">Album</p>
-          </div>
-
-          <div class="song">
-            <rect x="0" y="0" style="fill: #ffffff;"/>
-
-            <div class="icon">
-              <rect x="0" y="0" style="fill: #000000;" />
-            </div>
-
-            <p class="title">Song</p>
-            <br>
-            <p class="artist" id="artist">Artist</p>
-            <p class="album">Album</p>
-          </div>
-
-          <div class="song">
-            <rect x="0" y="0" style="fill: #ffffff;"/>
-
-            <div class="icon">
-              <rect x="0" y="0" style="fill: #000000;" />
-            </div>
-
-            <p class="title">Song</p>
-            <br>
-            <p class="artist" id="artist">Artist</p>
-            <p class="album">Album</p>
-          </div>
-
-          <div class="song">
-            <rect x="0" y="0" style="fill: #ffffff;"/>
-
-            <div class="icon">
-              <rect x="0" y="0" style="fill: #000000;" />
-            </div>
-
-            <p class="title">Song</p>
-            <br>
-            <p class="artist" id="artist">Artist</p>
-            <p class="album">Album</p>
-          </div>
-
-          <div class="song">
-            <rect x="0" y="0" style="fill: #ffffff;"/>
-
-            <div class="icon">
-              <rect x="0" y="0" style="fill: #000000;" />
-            </div>
-
-            <p class="title">Song</p>
-            <br>
-            <p class="artist" id="artist">Artist</p>
-            <p class="album">Album</p>
-          </div>
-
-          <form>
-            <input type="search" placeholder="Search">
-          </form>
-        </div>
-      </div>
+      <div id="results"></div>
     </div>
+
+    <script src="api.js"></script>
+    <script src="searchevent.js"></script>
+    <script src="results.js"></script>
   </body>
 </html>
