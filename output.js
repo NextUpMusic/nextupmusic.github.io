@@ -13,28 +13,13 @@ async function setPage()
     document.getElementById("name").innerHTML = catalog.name;
 
     if (type == "artists")
-    {
         document.getElementById("pfp").style.borderRadius = "50%";
-        document.getElementById("pfp").style.backgroundImage = `url(${catalog.images[0].url}`;
-        document.getElementById("pfp").style.backgroundSize = "cover";
-    }
-
-    if (type == "albums")
-    {
-        document.getElementById("pfp").style.backgroundImage = catalog.images[0].url;
-        document.getElementById("pfp").style.backgroundSize = "cover";
-    }
-
-    if (type == "tracks")
-    {
-        document.getElementById("pfp").style.backgroundImage = catalog.album.images[0].url;
-        document.getElementById("pfp").style.backgroundSize = "cover";
-    }
+        
+    document.getElementById("pfp").style.backgroundImage = `url(${catalog.images[0].url}`;
+    document.getElementById("pfp").style.backgroundSize = "cover";
 
     if (type == "artists" || type == "tracks")
-    {
         var recs = await getReccomendations(type, id);
-    }
 
     else
     {
@@ -62,7 +47,6 @@ async function setPage()
         ids = ids.substring(0, ids.length - 1);
         var recs = await getReccomendations("tracks", ids);
     }
-
 
     for (let i = 0; i < 10; i++)
     {
