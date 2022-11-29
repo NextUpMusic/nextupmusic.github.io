@@ -15,8 +15,7 @@ async function setPage()
     if (type == "artists")
     {
         document.getElementById("pfp").style.borderRadius = "50%";
-        document.getElementById("pfp").style.backgroundImage = catalog.images[0].url;
-        console.log (catalog.images[0].url);
+        document.getElementById("pfp").style.backgroundImage = `url(${catalog.images[0].url}`;
         document.getElementById("pfp").style.backgroundSize = "cover";
     }
 
